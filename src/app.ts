@@ -1,8 +1,8 @@
-import dotenv from 'dotenv';
-dotenv.config();
-import server from './server/index';
-import {environment} from './configuration/environment';
+import dotenv from 'dotenv'
+import server from './server/index'
+import { environment } from './configuration/environment'
+dotenv.config()
 
-const PORT = environment.port;
+const PORT = environment.port
 
-server.listen(PORT, () => console.log(`Server listening at http://localhost:${PORT}`));
+server.listen(PORT, () => console.log(`Server listening at http://localhost:${PORT}`))
